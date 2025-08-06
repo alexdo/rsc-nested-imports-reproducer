@@ -52,6 +52,12 @@ export default defineConfig({
           },
         },
       },
+      resolve: {
+        noExternal: ['keen-slider'],
+      },
+      optimizeDeps: {
+        include: ['keen-slider'],
+      },
     },
 
     // client environment is used for hydration and client-side rendering
